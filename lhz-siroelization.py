@@ -96,12 +96,12 @@ soudan = [("CeldesiaG01.pdf", 45, 45),
           ("CeldesiaG07.pdf", 74, 74)]
 
 # ファイル名とデータの組
-output_structure = [('scenario.pdf', scenario),
-                    ('rules.pdf', rules),
-                    ('culture.pdf', culture),
-                    ('d66.pdf', d66),
-                    ('hotlog.pdf', hotlog),
-                    ('soudan.pdf', soudan)]
+output_structure = [('lhz-scenario.pdf', scenario),
+                    ('lhz-rules.pdf', rules),
+                    ('lhz-culture.pdf', culture),
+                    ('lhz-d66.pdf', d66),
+                    ('lhz-hotlog.pdf', hotlog),
+                    ('lhz-soudan.pdf', soudan)]
 
 # 元のファイル
 # ウェンズデイなども流用できるよう、冗長にしています
