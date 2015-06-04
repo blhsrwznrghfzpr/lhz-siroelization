@@ -135,7 +135,7 @@ def make_pdf(output, container):
             source = source_without_dir
 
         # zipファイルの中のファイルを直接開く
-        with open(source, 'rh') as inputpdf:
+        with open(source, 'rb') as inputpdf:
             # 表示ページ数と実ページ数の整合のために1ページ増量だが、0スタートで補正できている
             merger.append(inputpdf, pages = (start, end + 1))
 
