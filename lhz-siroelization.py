@@ -29,7 +29,11 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 from PyPDF2 import PdfFileMerger
+import os
 import os.path
+import zipfile
+import urllib2
+import shutil
 
 # ページ数は全てページ内の表記。実際のページは+1
 # シナリオ
@@ -99,24 +103,82 @@ output_structure = [('scenario.pdf', scenario),
                     ('hotlog.pdf', hotlog),
                     ('soudan.pdf', soudan)]
 
+# 元のファイル
+# ウェンズデイなども流用できるよう、冗長にしています
+download_source = {"CeldesiaG01.pdf": ("CeldesiaG01.zip", "http://lhrpg.com/data/CeldesiaG01.zip"),
+                   "CeldesiaG02.pdf": ("CeldesiaG02.zip", "http://lhrpg.com/data/CeldesiaG02.zip"),
+                   "CeldesiaG03.pdf": ("CeldesiaG03.zip", "http://lhrpg.com/data/CeldesiaG03.zip"),
+                   "CeldesiaG04.pdf": ("CeldesiaG04.zip", "http://lhrpg.com/data/CeldesiaG04.zip"),
+                   "CeldesiaG05.pdf": ("CeldesiaG05.zip", "http://lhrpg.com/data/CeldesiaG05.zip"),
+                   "CeldesiaG06.pdf": ("CeldesiaG06.zip", "http://lhrpg.com/data/CeldesiaG06.zip"),
+                   "CeldesiaG07.pdf": ("CeldesiaG07.zip", "http://lhrpg.com/data/CeldesiaG07.zip")}
 
 def make_pdf(output, container):
+    u'''PDFを指定に従い作成する'''
     # マージするためのオブジェクト
     merger = PdfFileMerger()
+    print("{} making...".format(output))
 
     # マージするファイルを登録
     for item in container:
         datafile, start, end = item
-        source = os.path.join('source', datafile)
-        with open(source, 'rb') as inputpdf:
+        # ZIPファイルの拡張子抜き
+        basename = os.path.splitext(download_source[datafile][0])[0]
+        # どちらかが正しい(ディレクトリつきZIPとそうでないのがある)
+        source_with_dir = os.path.join('source', basename, datafile)
+        source_without_dir = os.path.join('source', datafile)
+        
+        # どちらが正しいか判定
+        if  os.access(source_with_dir, os.R_OK):
+            source = source_with_dir
+        else:
+            source = source_without_dir
+
+        # zipファイルの中のファイルを直接開く
+        with open(source, 'rh') as inputpdf:
             # 表示ページ数と実ページ数の整合のために1ページ増量だが、0スタートで補正できている
             merger.append(inputpdf, pages = (start, end + 1))
 
     # マージの実行
     with open(output, 'wb') as outputpdf:
         merger.write(outputpdf)
-    
 
+def do_download(outputdir, filename, url):
+    u'''URLからファイルをダウンロードする'''
+    # ダウンロードのバッファサイズ
+    bufsize = 1024 * 1024
+    # 出力ファイルのパス名つき情報
+    output_pathname = os.path.join(outputdir, filename)
+    
+    # ファイルが存在したならば、ダウンロードは行なわない
+    if os.access(output_pathname, os.R_OK):
+        print("{} is skipped".format(filename))
+        return True
+    else:
+        print("{} downloading...".format(filename))    
+
+    # URLをオープンして、中身をファイルにコピーする
+    urlhandle = urllib2.urlopen(url)
+    with open(output_pathname, 'wb') as filehandle:
+        shutil.copyfileobj(urlhandle, filehandle, bufsize)
+    urlhandle.close()
+
+def do_unzip(outputdir, filename):
+    u'''UNZIP'''
+    print("{} extracting...".format(filename))    
+    # 出力ファイルのパス名つき情報
+    output_pathname = os.path.join(outputdir, filename)
+    # ZIPファイルを展開する
+    with zipfile.ZipFile(output_pathname, 'r') as zip:
+        zip.extractall(outputdir)
+        
+# ファイルをsourceディレクトリにダウンロードする
+for filename, data in download_source.items():
+    zipname, download_url = data
+    do_download("source", zipname, download_url)
+    do_unzip("source", zipname)
+
+# 構成物ごとに、pDFを作成
 for item in output_structure:
     outputfile, data = item
     make_pdf(outputfile, data)
