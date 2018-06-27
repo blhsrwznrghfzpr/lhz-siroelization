@@ -60,7 +60,8 @@ culture = [("CeldesiaG01.pdf", 34, 36),
            ("CeldesiaG06.pdf", 15, 17),
            ("CeldesiaG07.pdf", 63, 65),
            ("CeldesiaG08.pdf", 7, 9),
-           ("CeldesiaG09.pdf", 14, 16)]
+           ("CeldesiaG09.pdf", 14, 16),
+           ("CeldesiaG10.pdf", 2, 7)]
 
 
 # 列島生物図鑑
@@ -72,7 +73,8 @@ encyclopedia = [("CeldesiaG01.pdf", 38, 41),
                 ("CeldesiaG06.pdf", 18, 28),
                 ("CeldesiaG07.pdf", 66, 70),
                 ("CeldesiaG08.pdf", 10, 12),
-                ("CeldesiaG09.pdf", 17, 23)]
+                ("CeldesiaG09.pdf", 17, 23),
+                ("CeldesiaG10.pdf", 8, 14)]
 
 # できるかな66
 d66 = [("CeldesiaG01.pdf", 42, 42),
@@ -83,7 +85,8 @@ d66 = [("CeldesiaG01.pdf", 42, 42),
        ("CeldesiaG06.pdf", 29, 30),
        ("CeldesiaG07.pdf", 71, 71),
        ("CeldesiaG08.pdf", 13, 13),
-       ("CeldesiaG09.pdf", 22, 22)]
+       ("CeldesiaG09.pdf", 22, 22),
+       ("CeldesiaG10.pdf", 15, 17)]
 
 
 # コッペリア・ホットログ
@@ -105,7 +108,8 @@ soudan = [("CeldesiaG01.pdf", 45, 45),
           ("CeldesiaG06.pdf", 35, 35),
           ("CeldesiaG07.pdf", 74, 74),
           ("CeldesiaG08.pdf", 17, 17),
-          ("CeldesiaG09.pdf", 26, 26)]
+          ("CeldesiaG09.pdf", 26, 26),
+          ("CeldesiaG10.pdf", 20, 20)]
 
 # ファイル名とデータの組
 output_structure = [('lhz-scenario.pdf', scenario),
@@ -125,7 +129,8 @@ download_source = {"CeldesiaG01.pdf": ("CeldesiaG01.zip", "http://lhrpg.com/data
                    "CeldesiaG06.pdf": ("CeldesiaG06.zip", "http://lhrpg.com/data/CeldesiaG06.zip"),
                    "CeldesiaG07.pdf": ("CeldesiaG07.zip", "http://lhrpg.com/data/CeldesiaG07.zip"),
                    "CeldesiaG08.pdf": ("CeldesiaG08.zip", "http://lhrpg.com/data/CeldesiaG08.zip"),
-                   "CeldesiaG09.pdf": ("CeldesiaG09.zip", "http://lhrpg.com/data/CeldesiaG09.zip")}
+                   "CeldesiaG09.pdf": ("CeldesiaG09.zip", "http://lhrpg.com/data/CeldesiaG09.zip"),
+                   "CeldesiaG10.pdf": ("CeldesiaG10.zip", "http://lhrpg.com/data/CeldesiaG10.zip")}
 
 def make_pdf(output, container):
     u'''PDFを指定に従い作成する'''
