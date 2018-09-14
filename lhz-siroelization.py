@@ -71,7 +71,8 @@ culture = [("CeldesiaG01.pdf", 34, 36),
            ("CeldesiaG14.pdf", 7, 10),
            ("CeldesiaG15.pdf", 2, 4),
            ("CeldesiaG16.pdf", 45, 47),
-           ("CeldesiaG17.pdf", 15, 21)]
+           ("CeldesiaG17.pdf", 15, 21),
+           ("CeldesiaG18.pdf", 4, 6)]
 
 
 # 列島生物図鑑
@@ -91,7 +92,8 @@ encyclopedia = [("CeldesiaG01.pdf", 38, 41),
                 ("CeldesiaG14.pdf", 10, 14),
                 ("CeldesiaG15.pdf", 5, 10),
                 ("CeldesiaG16.pdf", 48, 56),
-                ("CeldesiaG17.pdf", 22, 27)]
+                ("CeldesiaG17.pdf", 22, 27),
+                ("CeldesiaG18.pdf", 7, 12)]
 
 # できるかな66
 d66 = [("CeldesiaG01.pdf", 42, 42),
@@ -110,7 +112,8 @@ d66 = [("CeldesiaG01.pdf", 42, 42),
        ("CeldesiaG14.pdf", 15, 17),
        ("CeldesiaG15.pdf", 10, 12),
        ("CeldesiaG16.pdf", 57, 57),
-       ("CeldesiaG17.pdf", 28, 30)]
+       ("CeldesiaG17.pdf", 28, 30),
+       ("CeldesiaG18.pdf", 13, 15)]
 
 
 # コッペリア・ホットログ
@@ -141,7 +144,8 @@ soudan = [("CeldesiaG01.pdf", 45, 45),
           ("CeldesiaG14.pdf", 19, 19),
           ("CeldesiaG15.pdf", 15, 15),
           ("CeldesiaG16.pdf", 59, 59),
-          ("CeldesiaG17.pdf", 32, 32)]
+          ("CeldesiaG17.pdf", 32, 32),
+          ("CeldesiaG18.pdf", 17, 17)]
 
 
 # ファイル名とデータの組
@@ -170,7 +174,8 @@ download_source = {"CeldesiaG01.pdf": ("CeldesiaG01.zip", "http://lhrpg.com/data
                    "CeldesiaG14.pdf": ("CeldesiaG14.zip", "http://lhrpg.com/data/CeldesiaG14.zip"),
                    "CeldesiaG15.pdf": ("CeldesiaG15.zip", "http://lhrpg.com/data/CeldesiaG15.zip"),
                    "CeldesiaG16.pdf": ("CeldesiaG16.zip", "http://lhrpg.com/data/CeldesiaG16.zip"),
-                   "CeldesiaG17.pdf": ("CeldesiaG17.zip", "http://lhrpg.com/data/CeldesiaG17.zip")}
+                   "CeldesiaG17.pdf": ("CeldesiaG17.zip", "http://lhrpg.com/data/CeldesiaG17.zip"),
+                   "CeldesiaG18.pdf": ("CeldesiaG18.zip", "http://lhrpg.com/data/CeldesiaG18.zip")}
 
 def make_pdf(output, container):
     u'''PDFを指定に従い作成する'''
