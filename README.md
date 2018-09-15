@@ -65,6 +65,7 @@ http://lhrpg.com/lhz/download
 
 実行したディレクトリに、PDFファイルができているはずです。
 
+- lhz-index.pdf (目次一覧)
 - lhz-scenario.pdf (シナリオ)
 - lhz-rules.pdf (ルール・解説)
 - lhz-culture.pdf (ヤマト風土記)

@@ -36,6 +36,39 @@ import urllib2
 import shutil
 
 # ページ数は全てページ内の表記。実際のページは+1
+# 目次一覧
+index = [("CeldesiaG01.pdf", 1, 1),
+         ("CeldesiaG02.pdf", 1, 1),
+         ("CeldesiaG03.pdf", 1, 1),
+         ("CeldesiaG04.pdf", 1, 1),
+         ("CeldesiaG05.pdf", 1, 1),
+         ("CeldesiaG06.pdf", 1, 1),
+         ("CeldesiaG07.pdf", 1, 1),
+         ("CeldesiaG08.pdf", 1, 1),
+         ("CeldesiaG09.pdf", 1, 1),
+         ("CeldesiaG10.pdf", 1, 1),
+         ("CeldesiaG11.pdf", 1, 1),
+         ("CeldesiaG12.pdf", 1, 1),
+         ("CeldesiaG13.pdf", 1, 1),
+         ("CeldesiaG14.pdf", 1, 1),
+         ("CeldesiaG15.pdf", 1, 1),
+         ("CeldesiaG16.pdf", 1, 1),
+         ("CeldesiaG17.pdf", 1, 1),
+         ("CeldesiaG18.pdf", 1, 1),
+         ("CeldesiaG19.pdf", 1, 1),
+         ("CeldesiaG20.pdf", 1, 1),
+         ("CeldesiaG21.pdf", 1, 1),
+         ("CeldesiaG22.pdf", 1, 1),
+         ("CeldesiaG23.pdf", 1, 1),
+         ("CeldesiaG24.pdf", 1, 1),
+         ("CeldesiaG25.pdf", 1, 1),
+         ("CeldesiaG26.pdf", 1, 1),
+         ("CeldesiaG27.pdf", 1, 1),
+         ("CeldesiaG28.pdf", 1, 1),
+         ("CeldesiaG29.pdf", 1, 1),
+         ("CeldesiaG30.pdf", 1, 1)]
+
+
 # シナリオ
 scenario = [("CeldesiaG01.pdf", 2, 31),
             ("CeldesiaG02.pdf", 2, 27),
@@ -198,7 +231,8 @@ soudan = [("CeldesiaG01.pdf", 45, 45),
 
 
 # ファイル名とデータの組
-output_structure = [('lhz-scenario.pdf', scenario),
+output_structure = [('lhz-index.pdf', index),
+                    ('lhz-scenario.pdf', scenario),
                     ('lhz-rules.pdf', rules),
                     ('lhz-culture.pdf', culture),
                     ('lhz-d66.pdf', d66),
