@@ -69,6 +69,7 @@ http://lhrpg.com/lhz/download
 - lhz-scenario.pdf (シナリオ)
 - lhz-rules.pdf (ルール・解説)
 - lhz-culture.pdf (ヤマト風土記)
+- lhz-encyclopedia.pdf (列島生物図鑑)
 - lhz-d66.pdf (できるかな66)
 - lhz-hotlog.pdf (コッペリア・ホットログ)
 - lhz-teatime.pdf (エリッサのティータイム)
