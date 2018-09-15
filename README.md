@@ -71,6 +71,7 @@ http://lhrpg.com/lhz/download
 - lhz-culture.pdf (ヤマト風土記)
 - lhz-d66.pdf (できるかな66)
 - lhz-hotlog.pdf (コッペリア・ホットログ)
+- lhz-teatime.pdf (エリッサのティータイム)
 - lhz-soudan.pdf (ログホラ相談窓口)
 
 ##リポジトリ

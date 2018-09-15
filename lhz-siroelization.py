@@ -197,6 +197,39 @@ hotlog = [("CeldesiaG01.pdf", 44, 44),
           ("CeldesiaG11.pdf", 39, 39)]
 
 
+# エリッサのティータイム
+teatime = [("CeldesiaG01.pdf", 43, 43),
+           ("CeldesiaG02.pdf", 44, 44),
+           ("CeldesiaG03.pdf", 44, 44),
+           ("CeldesiaG04.pdf", 42, 42),
+           ("CeldesiaG05.pdf", 28, 28),
+           ("CeldesiaG06.pdf", 31, 34),
+           ("CeldesiaG07.pdf", 72, 72),
+           ("CeldesiaG08.pdf", 14, 15),
+           ("CeldesiaG09.pdf", 23, 24),
+           ("CeldesiaG10.pdf", 18, 19),
+           ("CeldesiaG11.pdf", 36, 38),
+           ("CeldesiaG12.pdf", 41, 42),
+           ("CeldesiaG13.pdf", 22, 23),
+           ("CeldesiaG14.pdf", 18, 18),
+           ("CeldesiaG15.pdf", 13, 14),
+           ("CeldesiaG16.pdf", 58, 58),
+           ("CeldesiaG17.pdf", 31, 31),
+           ("CeldesiaG18.pdf", 16, 16),
+           ("CeldesiaG19.pdf", 28, 28),
+           ("CeldesiaG20.pdf", 27, 28),
+           ("CeldesiaG21.pdf", 42, 42),
+           ("CeldesiaG22.pdf", 13, 13),
+           ("CeldesiaG23.pdf", 23, 23),
+           ("CeldesiaG24.pdf", 14, 14),
+           ("CeldesiaG25.pdf", 29, 29),
+           ("CeldesiaG26.pdf", 12, 12),
+           ("CeldesiaG27.pdf", 30, 30),
+           ("CeldesiaG28.pdf", 23, 23),
+           ("CeldesiaG29.pdf", 48, 48),
+           ("CeldesiaG30.pdf", 13, 13)]
+
+
 # ログホラ相談窓口
 soudan = [("CeldesiaG01.pdf", 45, 45),
           ("CeldesiaG02.pdf", 46, 46),
@@ -237,6 +270,7 @@ output_structure = [('lhz-index.pdf', index),
                     ('lhz-culture.pdf', culture),
                     ('lhz-d66.pdf', d66),
                     ('lhz-hotlog.pdf', hotlog),
+                    ('lhz-teatime.pdf', teatime),
                     ('lhz-soudan.pdf', soudan)]
 
 # 元のファイル
