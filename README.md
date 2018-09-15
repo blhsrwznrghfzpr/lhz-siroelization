@@ -65,12 +65,12 @@ http://lhrpg.com/lhz/download
 
 実行したディレクトリに、PDFファイルができているはずです。
 
-- scenario.pdf (シナリオ)
-- rules.pdf (ルール・解説)
-- culture.pdf (ヤマト風土記)
-- d66.pdf (できるかな66)
-- hotlog.pdf (コッペリア・ホットログ)
-- soudan.pdf (ログホラ相談窓口)
+- lhz-scenario.pdf (シナリオ)
+- lhz-rules.pdf (ルール・解説)
+- lhz-culture.pdf (ヤマト風土記)
+- lhz-d66.pdf (できるかな66)
+- lhz-hotlog.pdf (コッペリア・ホットログ)
+- lhz-soudan.pdf (ログホラ相談窓口)
 
 ##リポジトリ
 silver-rain/lhz-siroelization
