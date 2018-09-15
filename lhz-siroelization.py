@@ -118,7 +118,8 @@ encyclopedia = [("CeldesiaG01.pdf", 38, 41),
                 ("CeldesiaG26.pdf", 2, 7),
                 ("CeldesiaG27.pdf", 25, 29),
                 ("CeldesiaG28.pdf", 11, 19),
-                ("CeldesiaG29.pdf", 30, 43)]
+                ("CeldesiaG29.pdf", 30, 43),
+                ("CeldesiaG30.pdf", 2, 11)]
 
 # できるかな66
 d66 = [("CeldesiaG01.pdf", 42, 42),
@@ -148,7 +149,8 @@ d66 = [("CeldesiaG01.pdf", 42, 42),
        ("CeldesiaG25.pdf", 25, 28),
        ("CeldesiaG26.pdf", 8, 11),
        ("CeldesiaG28.pdf", 20, 23),
-       ("CeldesiaG29.pdf", 44, 47)]
+       ("CeldesiaG29.pdf", 44, 47),
+       ("CeldesiaG30.pdf", 12, 12)]
 
 
 # コッペリア・ホットログ
@@ -191,7 +193,8 @@ soudan = [("CeldesiaG01.pdf", 45, 45),
           ("CeldesiaG26.pdf", 13, 13),
           ("CeldesiaG27.pdf", 31, 31),
           ("CeldesiaG28.pdf", 25, 25),
-          ("CeldesiaG29.pdf", 49, 49)]
+          ("CeldesiaG29.pdf", 49, 49),
+          ("CeldesiaG30.pdf", 14, 14)]
 
 
 # ファイル名とデータの組
@@ -232,7 +235,8 @@ download_source = {"CeldesiaG01.pdf": ("CeldesiaG01.zip", "http://lhrpg.com/data
                    "CeldesiaG26.pdf": ("CeldesiaG26.zip", "http://lhrpg.com/data/CeldesiaG26.zip"),
                    "CeldesiaG27.pdf": ("CeldesiaG27.zip", "http://lhrpg.com/data/CeldesiaG27.zip"),
                    "CeldesiaG28.pdf": ("CeldesiaG28.zip", "http://lhrpg.com/data/CeldesiaG28.zip"),
-                   "CeldesiaG29.pdf": ("CeldesiaG29.zip", "http://lhrpg.com/data/CeldesiaG29.zip")}
+                   "CeldesiaG29.pdf": ("CeldesiaG29.zip", "http://lhrpg.com/data/CeldesiaG29.zip"),
+                   "CeldesiaG30.pdf": ("CeldesiaG30.zip", "http://lhrpg.com/data/CeldesiaG30.zip")}
 
 def make_pdf(output, container):
     u'''PDFを指定に従い作成する'''
